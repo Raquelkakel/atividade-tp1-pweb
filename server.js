@@ -26,7 +26,7 @@ app.get("/detalhes", (req, res) => {
 app.get("/contato", (req, res) => {
     res.render("codigocontato");
 });
-app.post("/contatorespostas", async(req, res) => {
+app.post("/respostas", async(req, res) => {
     console.log(req)
     try{
         const dados = req.body;
@@ -38,7 +38,7 @@ app.post("/contatorespostas", async(req, res) => {
     }
     res.redirect("/contatorespostas")
 });
-app.get("/contatorespostas", async (req, res) => {
+app.get("/respostas", async (req, res) => {
     try {
         const conteudo = await fs.readFile("app.json", "utf-8");
         const linhas = conteudo.trim().split("\n");
