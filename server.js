@@ -36,7 +36,7 @@ app.post("/respostas", async(req, res) => {
     } catch(err){
         console.error("Nao foi", err);
     }
-    res.redirect("/contatorespostas")
+    res.redirect("/respostas")
 });
 app.get("/respostas", async (req, res) => {
     try {
