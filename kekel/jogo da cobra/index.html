@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🐍 Jogo da Cobrinha</h1>
+
+        <div class="informacoes">
+            <p>Pontuação: <span id="score">0</span></p>
+
+            <label for="dificuldade">Dificuldade:</label>
+            <select id="dificuldade">
+                <option value="facil">Fácil</option>
+                <option value="dificil">Difícil</option>
+            </select>
+
+            <label for="velocidade">Velocidade:</label>
+            <select id="velocidade">
+                <option value="200">Lenta</option>
+                <option value="120" selected>Normal</option>
+                <option value="70">Rápida</option>
+            </select>
+        </div>
+
+        <canvas id="game" width="400" height="400"></canvas>
+
+        <p id="mensagem">Clique em iniciar para jogar!</p>
+
+        <button id="iniciar">Iniciar / Reiniciar</button>
+
+        <p class="instrucoes">
+            Utilize as setas do teclado para movimentar a cobrinha.
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

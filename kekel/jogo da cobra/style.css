@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #17212b;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    background: #243447;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #55ef8b;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+canvas {
+    background: #101820;
+    border: 3px solid #55ef8b;
+
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+button, select {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background: #55ef8b;
+    color: #17212b;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #32cd72;
+}
+
+#mensagem {
+    margin-top: 15px;
+}
+
+.instrucoes {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
